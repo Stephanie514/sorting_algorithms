@@ -28,13 +28,18 @@ int partition(int *array, int low, int high, size_t size);
 void swap(int *one, int *two);
 void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
+void swap_node(listint_t **list, listint_t *left, listint_t *right);
 void counting_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
 void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
+void count_sort(int *array, size_t size, int lsd);
+int get_max(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
+void bitonic_sort_recursive(int *array, size_t size, int up);
+void bitonic_merge(int *array, size_t size, int up);
+void quick_sorts_hoare(int *array, int low, int high, size_t size);
 void quick_sort_hoare(int *array, size_t size);
-void hoare_quick_sort(int *array, int low, int high);
 int hoare_partition(int *array, int low, int high, size_t size);
 
 
